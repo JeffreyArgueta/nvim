@@ -20,7 +20,6 @@ vim.opt.scrolloff      = 999
 vim.opt.list           = true
 vim.opt.listchars      = { tab = "→ ", trail = "·" }
 
-
 -- Search improvements
 vim.opt.ignorecase  = true
 vim.opt.smartcase   = true
