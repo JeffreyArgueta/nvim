@@ -4,7 +4,7 @@ return {
     config = function()
         require("lualine").setup({
             options = {
-                theme = "catppuccin", -- seoul256
+                theme = "auto", --"seoul256", --"catppuccin",
                 icons_enabled = true
             }
         })

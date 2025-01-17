@@ -30,7 +30,7 @@ vim.opt.incsearch   = true  -- Show matches while typing
 vim.opt.clipboard   = "unnamedplus"
 vim.opt.virtualedit = "block"
 vim.opt.inccommand  = "split"
-vim.opt.updatetime  = 300
+vim.opt.updatetime  = 999
 
 -- Keybindings
 local keymap        = vim.api.nvim_set_keymap
