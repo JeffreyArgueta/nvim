@@ -36,3 +36,4 @@ vim.opt.updatetime  = 999
 local keymap        = vim.api.nvim_set_keymap
 keymap("n", "<leader>w", ":w<CR>", { noremap = true })  -- Save file
 keymap("n", "<leader>q", ":q<CR>", { noremap = true })  -- Quit file
+keymap("n", "<leader>Q", ":q!<CR>", { noremap = true }) -- Quit without save
