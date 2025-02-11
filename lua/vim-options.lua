@@ -45,20 +45,48 @@ vim.opt.shellcmdflag   = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Comm
 vim.opt.shellquote     = "\""
 vim.opt.shellxquote    = ""
 
-local keymap = vim.api.nvim_set_keymap
-local opt    = { noremap = true, silent = true }
+local keymap           = vim.api.nvim_set_keymap
+local opt              = { noremap = true, silent = true }
 
--- Keybindings
-keymap("n", "<leader>t", ":Floaterminal<CR>", opt)   -- Open Floaterminal
+-- Saving and quiting
 keymap("n", "<leader>w", ":lua SaveFile()<CR>", opt) -- Save file
 keymap("n", "<leader>q", ":q<CR>", opt)              -- Quit file
 keymap("n", "<leader>Q", ":q!<CR>", opt)             -- Quit without save
 
--- Navigate vim panes better
-keymap("n", "<c-k>", ":wincmd k<CR>", opt)
-keymap("n", "<c-j>", ":wincmd j<CR>", opt)
-keymap("n", "<c-h>", ":wincmd h<CR>", opt)
-keymap("n", "<c-l>", ":wincmd l<CR>", opt)
+-- Split generation
+keymap("n", "<leader>v", ":vsplit<CR>", opt) -- Creates a veritcal split
+keymap("n", "<leader>s", ":split<CR>", opt)  -- Creates a horizontal split
+
+-- Split navigation
+keymap("n", "<C-h>", "<C-w>h", opt) -- Switches to left split
+keymap("n", "<C-l>", "<C-w>l", opt) -- Switches to right split
+keymap("n", "<C-j>", "<C-w>j", opt) -- Switches to bottom split
+keymap("n", "<C-k>", "<C-w>k", opt) -- Switches to top split
+
+-- Buffer navigation
+keymap("n", "<leader>n", ":bnext<CR>", opt)     -- Switches to next buffer
+keymap("n", "<leader>p", ":bprevious<CR>", opt) -- Swithes to previous buffer
+
+-- Autopairs
+keymap("i", "'", "''<left>", opt)
+keymap("i", "\"", "\"\"<left>", opt)
+keymap("i", "(", "()<left>", opt)
+keymap("i", "[", "[]<left>", opt)
+keymap("i", "{", "{}<left>", opt)
+
+-- Move lines down and up in visual selection
+keymap("v", "J", ":m '>+1<CR>gv=gv", opt)
+keymap("v", "K", ":m '<-2<CR>gv=gv", opt)
+
+-- Move buffer down and up with cursor centered
+keymap("n", "<C-d>", "<C-d>zz", opt)
+keymap("n", "<C-u>", "<C-u>zz", opt)
+
+-- Why not?
+keymap("x", "<leader>p", [["_dP]], opt)
+
+-- Floaterminal
+keymap("n", "<leader>t", ":Floaterminal<CR>", opt) -- Open Floaterminal
 
 -- Custom save file function
 function SaveFile()
