@@ -21,11 +21,11 @@ keymap("n", "<leader>n", ":bnext<CR>", opt)     -- Switches to next buffer
 keymap("n", "<leader>p", ":bprevious<CR>", opt) -- Swithes to previous buffer
 
 -- Autopairs
-keymap("i", "'", "''<left>", opt)
-keymap("i", "\"", "\"\"<left>", opt)
-keymap("i", "(", "()<left>", opt)
-keymap("i", "[", "[]<left>", opt)
-keymap("i", "{", "{}<left>", opt)
+-- keymap("i", "'", "''<left>", opt)
+-- keymap("i", "\"", "\"\"<left>", opt)
+-- keymap("i", "(", "()<left>", opt)
+-- keymap("i", "[", "[]<left>", opt)
+-- keymap("i", "{", "{}<left>", opt)
 
 -- Move lines down and up in visual selection
 keymap("v", "J", ":m '>+1<CR>gv=gv", opt)
