@@ -11,7 +11,6 @@ return {
         java = false,                       -- don't check treesitter on java
       },
     })
-
     local cmp_autopairs = require("nvim-autopairs.completion.cmp")
     local cmp = require("cmp")
     -- make autopairs and completion work together

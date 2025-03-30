@@ -3,12 +3,12 @@ return {
   build = ":TSUpdate",
   event = { "VeryLazy" },
   lazy = vim.fn.argc(-1) == 0, -- load treesitter early when opening a file from the cmdline
-
   config = function()
     local config = require("nvim-treesitter.configs")
     config.setup({
-      auto_install = true,
-      ensure_installed = {
+      auto_install          = true,
+      ignore_install        = { "latex" },
+      ensure_installed      = {
         "markdown", "markdown_inline",
         "c", "cpp", "python", "make", "cmake",
         "lua", "vim", "vimdoc", "query", "regex", "bash",

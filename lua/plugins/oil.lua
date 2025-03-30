@@ -10,7 +10,6 @@ return {
         ["q"] = "actions.close", -- Allows closing with 'q'
       },
     })
-
     local oil = require("oil")
     vim.keymap.set("n", "-",        "<CMD>Oil<CR>",                     { desc = "Open parent directory" })
     vim.keymap.set("n", "<space>-", function() oil.toggle_float() end,  { desc = "Open float parent directory" })

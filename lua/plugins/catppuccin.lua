@@ -8,7 +8,6 @@ return {
       transparent_background = true,
       no_bold                = true,    -- Force no bold
     })
-
     vim.cmd.colorscheme "catppuccin"
   end
 }
