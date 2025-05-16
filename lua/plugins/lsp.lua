@@ -26,11 +26,17 @@ return {
       },
     })
     local capabilities = require("blink.cmp").get_lsp_capabilities()
-    require("mason-lspconfig").setup_handlers({
-      function(server_name)
-        require("lspconfig")[server_name].setup({ capabilities = capabilities })
-      end,
-    })
+
+    for _, server_name in ipairs(require("mason-lspconfig").get_installed_servers()) do
+      require("lspconfig")[server_name].setup({ capabilities = capabilities })
+    end
+
+    -- require("mason-lspconfig").setup_handlers({
+    --   function(server_name)
+    --     require("lspconfig")[server_name].setup({ capabilities = capabilities })
+    --   end,
+    -- })
+
     vim.diagnostic.config({ virtual_text = { current_line = true } })
     vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, { desc = "LSP go to declaration" })
     vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "LSP go to definition" })
