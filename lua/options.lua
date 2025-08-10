@@ -11,12 +11,14 @@ vim.opt.wrap           = false
 -- Identation
 vim.opt.tabstop        = 2
 vim.opt.shiftwidth     = 2
+vim.opt.softtabstop    = 2
 vim.opt.expandtab      = true
 vim.opt.autoindent     = true
 vim.opt.smartindent    = true
 
 -- UI enhancements
 vim.opt.termguicolors  = true
+-- vim.opt.winborder      = "rounded" -- Neovim 0.11+ feature
 vim.opt.scrolloff      = 8
 vim.opt.sidescrolloff  = 8
 vim.opt.list           = true
@@ -32,6 +34,7 @@ vim.opt.incsearch      = true  -- Show matches while typing
 vim.opt.undofile       = true -- Persistent undo
 vim.opt.mouse          = "a"  -- Enable mouse support
 vim.opt.cursorline     = true -- Highlight current line
+vim.opt.swapfile       = false
 
 -- Performance tweaks
 vim.opt.clipboard      = "unnamedplus"
@@ -40,7 +43,7 @@ vim.opt.inccommand     = "split"
 vim.opt.updatetime     = 250
 
 -- Powershell
-vim.opt.shell          = "pwsh"
-vim.opt.shellcmdflag   = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command"
-vim.opt.shellquote     = "\""
-vim.opt.shellxquote    = ""
+-- vim.opt.shell          = "pwsh"
+-- vim.opt.shellcmdflag   = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command"
+-- vim.opt.shellquote     = "\""
+-- vim.opt.shellxquote    = ""
