@@ -18,7 +18,7 @@ vim.opt.smartindent    = true
 
 -- UI enhancements
 vim.opt.termguicolors  = true
--- vim.opt.winborder      = "rounded" -- Neovim 0.11+ feature
+vim.opt.winborder      = "rounded" -- Neovim 0.11+ feature
 vim.opt.scrolloff      = 8
 vim.opt.sidescrolloff  = 8
 vim.opt.list           = true
