@@ -12,5 +12,7 @@ return {
   root_markers = { 'build.gradle', 'build.gradle.kts', 'pom.xml', '.git' },
   cmd = { vim.fn.expand('~/.local/share/nvim/mason/bin/java-language-server') },
   single_file_support = true,
-  settings = {},
+  settings = {
+    java = { home = '/usr/lib/jvm/java-21-openjdk-amd64' }
+  },
 }
