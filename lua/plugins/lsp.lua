@@ -21,7 +21,8 @@ return {
         "clangd", "cmake",
         "lua_ls", "vimls",
         "html", "cssls", "css_variables",
-        "java_language_server",
+        -- "java_language_server",
+        "jdtls",
         "ts_ls", "jsonls"
       },
     })
@@ -30,7 +31,7 @@ return {
 
     vim.lsp.config("*", { capabilities = capabilities })
 
-    for _, server_name in ipairs(installed_servers) do
+    for _, server_name in pairs(installed_servers) do
       vim.lsp.enable(server_name)
     end
 
