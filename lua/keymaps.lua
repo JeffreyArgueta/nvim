@@ -8,7 +8,7 @@ keymap("n", "<leader>Q", ":q!<CR>", opt)             -- Quit without save
 
 -- Split generation
 keymap("n", "<leader>v", ":vsplit<CR>", opt) -- Creates a veritcal split
-keymap("n", "<leader>s", ":split<CR>", opt)  -- Creates a horizontal split
+keymap("n", "<leader>h", ":split<CR>", opt)  -- Creates a horizontal split
 
 -- Split navigation
 keymap("n", "<C-h>", "<C-w>h", opt) -- Switches to left split
@@ -17,15 +17,12 @@ keymap("n", "<C-j>", "<C-w>j", opt) -- Switches to bottom split
 keymap("n", "<C-k>", "<C-w>k", opt) -- Switches to top split
 
 -- Buffer navigation
-keymap("n", "<leader>n", ":bnext<CR>", opt)     -- Switches to next buffer
-keymap("n", "<leader>p", ":bprevious<CR>", opt) -- Swithes to previous buffer
+keymap("n", "<C-n>", ":bnext<CR>", opt)     -- Switches to next buffer
+keymap("n", "<C-p>", ":bprevious<CR>", opt) -- Swithes to previous buffer
 
--- Autopairs
--- keymap("i", "'", "''<left>", opt)
--- keymap("i", "\"", "\"\"<left>", opt)
--- keymap("i", "(", "()<left>", opt)
--- keymap("i", "[", "[]<left>", opt)
--- keymap("i", "{", "{}<left>", opt)
+-- Better identation in visual mode
+keymap("v", "<", "<gv", opt)
+keymap("v", ">", ">gv", opt)
 
 -- Move lines down and up in visual selection
 keymap("v", "J", ":m '>+1<CR>gv=gv", opt)
