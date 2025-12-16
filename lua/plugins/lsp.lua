@@ -35,11 +35,6 @@ return {
       vim.lsp.enable(server_name)
     end
 
-    -- vim.lsp.config("java-language-server", {
-    --   cmd = { vim.fn.expand('~/.local/share/nvim/mason/bin/java-language-server') },
-    --   single_file_support = true
-    -- })
-
     vim.diagnostic.config({ virtual_text = { current_line = true } })
     vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, { desc = "LSP go to declaration" })
     vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "LSP go to definition" })

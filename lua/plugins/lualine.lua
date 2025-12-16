@@ -20,7 +20,7 @@ return {
         lualine_c = {
           { 'location', separator = { right = '' }, color = { fg = cp.overlay0 }, left_padding = 3 },
           { '%=', separator = { right = '' } },
-          { 'diagnostics', symbols = { error = ' ', warn = ' ', info = ' ', hint = ' ' }, }
+          { 'diagnostics', symbols = { error = ' ', warn = ' ', info = ' ', hint = ' ' }, }
         },
         lualine_x = {
           { 'lsp_status', icon = '󰅡', color = { fg = cp.overlay0 }, symbols = { done = '' } }
@@ -34,7 +34,7 @@ return {
 
               -- Check if the current buffer is an Oil.nvim buffer
               if vim.bo.filetype == 'oil' or require("oil").get_current_dir() then
-                icon = '󰦨'
+                icon = ''
                 filename = "Oil"
               end
 

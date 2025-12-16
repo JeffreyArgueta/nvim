@@ -17,10 +17,10 @@ keymap("n", "<C-j>", "<C-w>j", opt) -- Switches to bottom split
 keymap("n", "<C-k>", "<C-w>k", opt) -- Switches to top split
 
 -- Split resizing
-keymap("n", "]", [[<cmd>vertical resize +5<cr>]], opt)   -- Resize the window bigger vertically
-keymap("n", "[", [[<cmd>vertical resize -5<cr>]], opt)   -- Resize the window smaller vertically
-keymap("n", "}", [[<cmd>horizontal resize +2<cr>]], opt) -- Resize the window bigger horizontally
-keymap("n", "{", [[<cmd>horizontal resize -2<cr>]], opt) -- Resize the window smaller horizontally
+keymap("n", "]", "<C-w>+", opt)   -- Resize the window bigger vertically
+keymap("n", "[", "<C-w>-", opt)   -- Resize the window smaller vertically
+keymap("n", "}", "<C-w>>", opt) -- Resize the window bigger horizontally
+keymap("n", "{", "<C-w><", opt) -- Resize the window smaller horizontally
 
 -- Buffer navigation
 keymap("n", "<C-n>", ":bnext<CR>", opt)     -- Switches to next buffer
