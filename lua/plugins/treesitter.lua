@@ -10,7 +10,7 @@ return {
       ignore_install        = { "latex" },
       ensure_installed      = {
         "markdown", "markdown_inline",
-        "c", "cpp", "python", "make", "cmake",
+        "c", "cpp", "c_sharp", "python", "make", "cmake",
         "lua", "vim", "vimdoc", "query", "regex", "bash",
         "javascript", "typescript", "tsx", "php", "php_only",
         "html", "css", "json", "jsonc", "xml", "yaml", "toml",

@@ -18,12 +18,20 @@ return {
     })
     require("mason-lspconfig").setup({
       ensure_installed = {
-        "clangd", "cmake",
-        "lua_ls", "vimls",
-        "html", "cssls", "css_variables",
-        -- "java_language_server",
-        "jdtls",
-        "ts_ls", "jsonls"
+        "csharp_ls",      -- C#
+        "clangd",         -- C, C++
+        "cmake",          -- CMake
+        "cssls",          -- CSS, SCSS, LESS
+        "css_variables",  -- CSS, SCSS, LESS
+        "html",           -- HTML
+        "jdtls",          -- Java
+        "jsonls",         -- JSON
+        "lemminx",        -- XML
+        "lua_ls",         -- Lua
+        "tombi",          -- TOML
+        "ts_ls",          -- TypeScript, JavaScript
+        "vimls",          -- VimScript
+        "yamlls",         -- YAML
       },
     })
     local capabilities = require("blink.cmp").get_lsp_capabilities()
