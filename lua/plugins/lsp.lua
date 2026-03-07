@@ -22,6 +22,7 @@ return {
         "clangd",         -- C, C++
         "cmake",          -- CMake
         "cssls",          -- CSS, SCSS, LESS
+        "eslint",         -- TypeScript, JavaScript
         "css_variables",  -- CSS, SCSS, LESS
         "html",           -- HTML
         "jdtls",          -- Java
@@ -31,6 +32,7 @@ return {
         "tombi",          -- TOML
         "ts_ls",          -- TypeScript, JavaScript
         "vimls",          -- VimScript
+        "vue_ls",         -- Vue
         "yamlls",         -- YAML
       },
     })
