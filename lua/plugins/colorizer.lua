@@ -1,10 +1,5 @@
-return {
-  "catgoose/nvim-colorizer.lua",
-  event = "VeryLazy",
-  opts = { lazy_load = true },
-  config = function()
-    require("colorizer").setup({
-      user_default_options = { names = false, xterm = true }
-    })
-  end
-}
+vim.pack.add({ { src = 'https://github.com/catgoose/nvim-colorizer.lua' } })
+
+require('colorizer').setup({
+  user_default_options = { names = false, xterm = true }
+})
