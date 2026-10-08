@@ -1,4 +1,6 @@
-function SaveFile()
+local M = {}
+
+function M.save()
   -- Check if the current buffer is an Oil.nvim buffer
   if vim.bo.filetype == "oil" or require("oil").get_current_dir() then
     vim.cmd("w") -- Save changes in Oil.nvim
@@ -24,3 +26,5 @@ function SaveFile()
     vim.notify("Error: " .. err, vim.log.levels.ERROR) -- Show the error message if it fails
   end
 end
+
+return M

@@ -20,6 +20,7 @@ vim.opt.sidescrolloff  = 8             -- Keep 8 columns visible to the left/rig
 vim.opt.list           = true          -- Show invisible characters
 vim.opt.listchars      = { tab = '→ ', trail = '·', extends = '>', precedes = '<' }
 vim.opt.fillchars      = { eob = ' ' } -- End of Buffer fill character to none (default '~')
+vim.opt.signcolumn     = 'yes'         -- Prevents text from jumping left/right (gitsigns and diagnostics)
 
 -- Search improvements
 vim.opt.ignorecase     = true  -- Ignore case in search patterns
