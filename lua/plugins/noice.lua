@@ -1,9 +1,3 @@
-vim.pack.add({
-  { src = 'https://github.com/folke/noice.nvim' },
-  { src = 'https://github.com/MunifTanjim/nui.nvim' },
-  { src = 'https://github.com/rcarriga/nvim-notify' }
-})
-
 require('notify').setup({
   stages            = 'fade_in_slide_out', -- Change this to 'fade_in_slide_out', 'fade', 'slide' or 'static'
   background_colour = '#000000',           -- transparent background

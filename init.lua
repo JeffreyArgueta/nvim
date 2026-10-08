@@ -17,25 +17,8 @@
 -- require("terminal")
 -- require("lazy").setup("plugins")
 
-require('config.globals')
-require('config.options')
-require('config.keymaps')
-require('config.lsp')
-
-require('functions.save')
-require('functions.terminal')
-
-require('plugins.autopairs')
-require('plugins.catppuccin')
-require('plugins.colorizer')
-require('plugins.devicons')
-require('plugins.git')
-require('plugins.lualine')
-require('plugins.markdown-preview')
-require('plugins.noice')
-require('plugins.oil')
-require('plugins.telescope')
-require('plugins.todo-comments')
-require('plugins.treesitter')
+require('config')
+require('functions')
+require('plugins')
 
 vim.cmd.colorscheme 'catppuccin-nvim'

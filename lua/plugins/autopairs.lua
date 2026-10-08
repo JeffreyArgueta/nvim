@@ -1,8 +1,3 @@
-vim.pack.add({
-  { src = 'https://github.com/windwp/nvim-autopairs' },
-  { src = 'https://github.com/hrsh7th/nvim-cmp' }
-})
-
 require('nvim-autopairs').setup({
   check_ts = true,                      -- enable treesitter
   ts_config = {

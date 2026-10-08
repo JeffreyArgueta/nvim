@@ -1,12 +1,13 @@
 vim.pack.add({
-  { src = 'https://github.com/neovim/nvim-lspconfig' },
-  { src = 'https://github.com/nvim-lua/plenary.nvim' },
-  { src = 'https://github.com/mason-org/mason.nvim' },
-  { src = 'https://github.com/mason-org/mason-lspconfig.nvim' },
-  { src = 'https://github.com/folke/lazydev.nvim' },
-  { src = 'https://github.com/saghen/blink.cmp',              version = 'v1' },
-  { src = 'https://github.com/rafamadriz/friendly-snippets' },
-  { src = 'https://github.com/xzbdmw/colorful-menu.nvim' }
+  { src = 'https://github.com/saghen/blink.cmp', version = 'v1' },
+  'https://github.com/neovim/nvim-lspconfig',
+  'https://github.com/b0o/SchemaStore.nvim',
+  'https://github.com/nvim-lua/plenary.nvim',
+  'https://github.com/mason-org/mason.nvim',
+  'https://github.com/mason-org/mason-lspconfig.nvim',
+  'https://github.com/folke/lazydev.nvim',
+  'https://github.com/rafamadriz/friendly-snippets',
+  'https://github.com/xzbdmw/colorful-menu.nvim',
 })
 
 require('mason').setup({

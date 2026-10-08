@@ -1,5 +1,3 @@
-vim.pack.add({ { src = 'https://github.com/nvim-lualine/lualine.nvim' } })
-
 local cp = require('catppuccin.palettes').get_palette()
 
 require('lualine').setup({

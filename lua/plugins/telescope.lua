@@ -1,9 +1,3 @@
-vim.pack.add({
-  { src = 'https://github.com/nvim-telescope/telescope.nvim' },
-  { src = 'https://github.com/nvim-telescope/telescope-ui-select.nvim' },
-  { src = 'https://github.com/nvim-telescope/telescope-fzf-native.nvim' },
-})
-
 require('telescope').setup({
   extensions = { ['ui-select'] = { require('telescope.themes').get_dropdown() } },
   defaults = {

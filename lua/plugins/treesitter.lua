@@ -1,7 +1,3 @@
--- nvim-treesitter `main` branch - incompatible rewrite, replaces archived `master`
--- Requires Neovim >=0.12 (you are on 0.13-dev), tar/curl, C compiler, tree-sitter CLI >=0.26.1 (package, not npm)
-vim.pack.add { { src = 'https://github.com/nvim-treesitter/nvim-treesitter', version = 'main' } }
-
 require('nvim-treesitter').setup {
   -- parsers + queries go here, prepended to rtp (keep default)
   install_dir = vim.fn.stdpath('data') .. '/site',
@@ -21,6 +17,7 @@ local parsers = {
   'git_config', 'git_rebase',
   'gitattributes',
   'gitcommit', 'gitignore',
+  'sql', 'dockerfile', 'nginx', 'vue',
 }
 
 -- Install parsers synchronously only if missing (avoids spam on every startup).
