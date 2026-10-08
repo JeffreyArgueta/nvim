@@ -2,7 +2,6 @@ vim.pack.add({
   { src = 'https://github.com/catppuccin/nvim',                 name = 'catppuccin' },
   { src = 'https://github.com/nvim-treesitter/nvim-treesitter', version = 'main' },
   'https://github.com/windwp/nvim-autopairs',
-  'https://github.com/hrsh7th/nvim-cmp',
   'https://github.com/nvim-telescope/telescope.nvim',
   'https://github.com/nvim-telescope/telescope-ui-select.nvim',
   'https://github.com/nvim-telescope/telescope-fzf-native.nvim',
